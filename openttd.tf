@@ -23,11 +23,11 @@ resource "aws_instance" "openttd" {
   }
 
   provisioner "file" {
-    source      = "/home/ubersholder/openttd/openttd.sh"
+    source      = "./openttd.sh"
     destination = "/tmp/openttd.sh"
   }
   provisioner "file" {
-    source      = "/home/ubersholder/openttd/openttd.cfg"
+    source      = "./openttd.cfg"
     destination = "/tmp/openttd.cfg"
   }
   provisioner "remote-exec" {
