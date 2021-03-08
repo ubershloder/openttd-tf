@@ -1,5 +1,6 @@
 #!/bin/bash
 sudo apt-get update
+### upgrade is optional ###
 #sudo apt-get upgrade -y
 
 if [[ "${?}" -ne 0 ]]
@@ -23,3 +24,6 @@ then
   echo "DONE!"
 fi
 
+exit 
+exit
+exit
