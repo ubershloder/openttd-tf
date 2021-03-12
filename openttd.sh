@@ -24,6 +24,3 @@ then
   echo "DONE!"
 fi
 
-exit 
-exit
-exit

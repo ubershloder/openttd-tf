@@ -40,20 +40,6 @@ resource "aws_instance" "openttd" {
   }
 }
 
-#  user_data = <<EOF
-#        #!/bin/bash
-#        sudo apt update
-#        sudo apt upgrade
-#        sudo apt-get build-dep openttd
-#        wget https://cdn.openttd.org/openttd-releases/1.10.3/openttd-1.10.3-linux-ubuntu-focal-amd64.deb
-#        sudo dpkg -i openttd-1.10.3-linux-ubuntu-focal-amd64.deb
-#        openttd -D
-#          EOF  
-#  tags = {
-#    Name = "openttd IAC"
-#}
-#}
-
 resource "aws_security_group" "instance" {
   name        = "openttd SG"
   description = "SG for openttd with 3979 openned"
