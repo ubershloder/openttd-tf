@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "openttd" {
   ami                         = "ami-0932440befd74cdba"
-  instance_type               = "t2.micro"
+  instance_type               = "t3.micro"
   vpc_security_group_ids      = [aws_security_group.instance.id]
   key_name                    = "uber"
   associate_public_ip_address = true
